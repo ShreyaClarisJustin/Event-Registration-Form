@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Event Registration Form</h1>
+    </header>
+    <form class="form-body" >
+        <div class="form-row">
+        <!-- <label for="fname">Full Name</label> -->
+        <input type="text" class="input-field" id="fname" placeholder="Full Name" required>
+        </div>
+
+        <div class="form-row">
+      <!-- <label for="email">Email Address</label> -->
+      <input type="email" class="input-field" id="email" placeholder="Email" required>
+        </div>
+      <div class="form-row">
+      <!-- <label for="phone">Phone Number</label> -->
+      <input type="tel" class="input-field" id="phone" placeholder="Phone Number" required>
+      </div>
+
+        <!-- <div class="form-row">
+            <input type="radio" name="gender"> Male
+<input type="radio" name="gender"> Female
+        </div> -->
+      <!-- <button>Register</button> -->
+       <div class="form-row gender-row">
+  <label>Gender</label>
+  <div class="gender-options">
+      <input type="radio" name="gender" value="male" required> Male<br>
+      <input type="radio" name="gender" value="female"> Female<br>
+      <!-- <input type="radio" name="gender" value="other"> Other <br> -->
+  </div>
+</div>
+
+<!-- <div class="food-row">
+    <label>Food Preference</label>
+
+    <div class="food-options">
+        <label for="">
+        <input type="radio" name="food" value="vegetarian"> Vegetarian
+        </label>
+
+
+        <label for="">
+        <input type="radio" name="food" value="non-vegetarian"> Non-Vegetarian
+        </label>
+    </div>
+</div> -->
+  
+<div class="year-select">
+  <label for="year">Year of Study</label>
+
+  <select id="year" name="year" required>
+    <option value="">-- Select Year --</option>
+    <option value="1">1st Year</option>
+    <option value="2">2nd Year</option>
+    <option value="3">3rd Year</option>
+    <option value="4">4th Year</option>
+  </select>
+</div>
+
+<div class="event-select">
+  <label for="event">Select Event</label><br>
+
+  <input type="checkbox" name="event[]" value="workshop"> Workshop<br>
+  <input type="checkbox" name="event[]" value="seminar"> Seminar<br>
+  <input type="checkbox" name="event[]" value="competition"> Competition<br>
+  <input type="checkbox" name="event[]" value="culturals"> Cultural Event<br>
+</div>
+
+
+<div class="input-submit">
+            <button class="submit-btn" id="Submit" type="submit">Submit</button>
+        </div>
+
+</form>
+</body>
+</html>
