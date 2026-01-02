@@ -33,9 +33,9 @@
        <div class="form-row gender-row">
   <label>Gender</label>
   <div class="gender-options">
-      <input type="radio" name="gender" value="male" required> Male<br>
-      <input type="radio" name="gender" value="female"> Female<br>
-      <input type="radio" name="gender" value="other"> Other <br>
+      <label class="radio-label"><input type="radio" name="gender" value="male" required> Male<br></label>
+      <label class="radio-label"><input type="radio" name="gender" value="female"> Female<br></label>
+      <label class="radio-label"><input type="radio" name="gender" value="other"> Other <br></label>
   </div>
 </div>
 
@@ -66,13 +66,26 @@
   </select>
 </div>
 
+<div class="dept-select">
+  <label for="dept">Department</label>
+
+  <select id="dept" name="dept" required>
+    <option value="">-- Select Department --</option>
+    <option value="1">CSE</option>
+    <option value="2">ECE</option>
+    <option value="3">EEE</option>
+    <option value="4">ME</option>
+    <option value="5">CE</option>
+  </select>
+</div>
+
 <div class="event-select">
   <label for="event">Select Event</label><br>
 <div class="event-options">
-  <input type="checkbox" name="event[]" value="workshop"> Workshop<br>
-  <input type="checkbox" name="event[]" value="seminar"> Seminar<br>
-  <input type="checkbox" name="event[]" value="competition"> Competition<br>
-  <input type="checkbox" name="event[]" value="culturals"> Cultural Event<br>
+  <label class="check-label"><input type="checkbox" name="event[]" value="workshop"> Workshop<br></label>
+  <label class="check-label"><input type="checkbox" name="event[]" value="seminar"> Seminar<br></label>
+  <label class="check-label"><input type="checkbox" name="event[]" value="competition"> Competition<br></label>
+  <label class="check-label"><input type="checkbox" name="event[]" value="culturals"> Cultural Event<br></label>
 </div>
 </div>
 
